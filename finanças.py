@@ -62,3 +62,6 @@ def carregar_dados():
         print("Dados carregados com sucesso.")
     except (FileNotFoundError, json.JSONDecodeError):
         print("Nenhum dado encontrado ou erro ao carregar os dados.")
+
+def main():
+    carregar_dados()
