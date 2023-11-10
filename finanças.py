@@ -65,3 +65,38 @@ def carregar_dados():
 
 def main():
     carregar_dados()
+
+    while True:
+        print("\n### MENU ###")
+        print("1. Adicionar Transação")
+        print("2. Remover Transação")
+        print("3. Visualizar Relatório Financeiro")
+        print("4. Obter Insights")
+        print("5. Salvar Dados")
+        print("6. Sair")
+
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == '1':
+            tipo = input("Tipo (receita ou despesa): ")
+            valor = float(input("Valor: "))
+            descricao = input("Descrição: ")
+            data = input("Data: ")
+            adicionar_transacao(tipo, valor, descricao, data)
+        elif opcao == '2':
+            identificador = int(input("ID da transação a ser removida: "))
+            remover_transacao(identificador)
+        elif opcao == '3':
+            visualizar_relatorio()
+        elif opcao == '4':
+            obter_insights()
+        elif opcao == '5':
+            salvar_dados()
+        elif opcao == '6':
+            salvar_dados()
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+
+if _name_ == "_main_":
+    main()
