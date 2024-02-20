@@ -1,7 +1,16 @@
-Gabriel Onodera
-RM 553779
+# Gestor Financeiro
 
-Descrição do Projeto
-Gerenciador de Finanças
+Este é um simples gestor financeiro em Python que permite adicionar transações, remover transações, visualizar um relatório financeiro e obter insights sobre suas finanças pessoais.
 
-Um programa para ajudar os usuários a gerenciar suas finanças pessoais. Os usuários serão capazes de registrar receitas e despesas, visualizar um relatório de suas finanças e obter insights sobre seus hábitos de gastos.
+## Funcionalidades
+
+- **Adicionar Transação**: Adicione uma nova transação especificando o tipo (receita ou despesa), o valor, a descrição e a data.
+- **Remover Transação**: Remova uma transação existente fornecendo o ID da transação.
+- **Visualizar Relatório Financeiro**: Veja um relatório com as receitas totais, as despesas totais e o saldo atual.
+- **Obter Insights**: Receba insights sobre suas finanças pessoais com base no saldo atual.
+- **Salvar Dados**: Salve todas as transações em um arquivo JSON para persistência de dados.
+- **Sair**: Encerre o programa e salve os dados.
+
+## Pré-requisitos
+
+- Python 3.x
